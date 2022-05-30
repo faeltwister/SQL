@@ -1,0 +1,13 @@
+use sucos;
+
+SELECT * FROM tbcliente;
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO = '1995-01-13';
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO > '1995-01-13';
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO <= '1995-01-13';
+
+SELECT Nome, Idade, Data_Nascimento FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) = '1995';
+
+SELECT * FROM tbcliente WHERE MONTH(DATA_NASCIMENTO) = 10;
