@@ -1,0 +1,8 @@
+--toda a database
+mysqldump -u root -p sucos_vendas > C:\Users\faelc\Desktop\bk_database_sucos_vendas\sucos_vendas.sql   
+
+--apenas as estruturas do banco
+mysqldump -u root -p --no-data sucos_vendas > C:\Users\faelc\Desktop\bk_database_sucos_vendas\sucos_vendas_estrutura.sql
+
+--apenas os registros
+mysqldump -u root -p --no-create-info sucos_vendas > C:\Users\faelc\Desktop\bk_database_sucos_vendas\sucos_vendas_dados.sql
